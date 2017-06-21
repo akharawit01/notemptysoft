@@ -1,0 +1,112 @@
+/**
+ * Description: Notemptysoft.
+ * Version: 1.0.0
+ * Last update: 2017/06/20
+ * Author: Akharawit Aryakom(Not)
+ * Email: akharawitbuzzwoo@gmail.com, akharawitnotemptysoft@gmail.com
+ *
+ * Summary:
+ *    0. Reset
+ *    1. Basic Elements
+ *    2. Generic Classes
+ *    3. Basic Layout
+ *    4. Header
+ *    5. Content
+ *    6. Footer
+ *    7. Etc
+ *
+*/
+
+$clr-main: #EE6B02;
+$clr-grey: #F7F7F7;
+
+/*===========================*/
+/*========== Reset ==========*/
+/*===========================*/
+
+/*===========================*/
+/*====== Basic Elements =====*/
+/*===========================*/
+body {
+    overflow-x: hidden;
+}
+/*===========================*/
+/*====== Generic Classes ====*/
+/*===========================*/
+clearfix:before,
+clearfix:after, {
+    content: "";
+    display: table;
+} 
+clearfix:after,
+ul.thumbnails:after {
+    clear: both;
+}
+.mg-t-10 {
+    margin-top: 10px;
+}
+.mg-t-15 {
+    margin-top: 15px;
+}
+
+.half-section {
+    margin-right: -10000px;
+    padding-right: 10000px;
+}
+
+.clr-bg-main {
+    background: $clr-main;
+}
+.clr-bg-grey {
+    background: $clr-grey;
+}
+
+/*===========================*/
+/*======= Basic Layout ======*/
+/*===========================*/
+.technologies {
+    background: $clr-main;
+    padding: 5px;
+    text-align: center;
+}
+.our-service {
+    & .title-our-service {
+        background: #FFF;
+    }
+    & .list-our-services {
+        padding: 15px;
+    }
+}
+/*===========================*/
+/*========== Header ==========*/
+/*===========================*/
+header {
+    &.header-top {
+        box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+    }
+}
+
+.logo {
+    float: left;
+    height: 60px;
+}
+
+.nav-search {
+    margin-top: 15px;
+    width: 320px;
+}
+
+
+/*===========================*/
+/*========= Content =========*/
+/*===========================*/
+
+
+/*===========================*/
+/*========== Footer =========*/
+/*===========================*/
+
+
+/*===========================*/
+/*=========== Etc ===========*/
+/*===========================*/

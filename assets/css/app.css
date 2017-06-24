@@ -16,13 +16,31 @@
  *    7. Etc
  *
 */
+@import url("https://fonts.googleapis.com/css?family=Prompt");
 /*===========================*/
 /*========== Reset ==========*/
 /*===========================*/
+.btn,
+.nav-pills > li > a {
+  border-radius: 0; }
+
+.btn {
+  transition: box-shadow .3s,background-color .3s,color .3s,transform .3s; }
+  .btn:hover {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.56); }
+
 /*===========================*/
 /*====== Basic Elements =====*/
 /*===========================*/
+body,
+html {
+  height: 100%; }
+
 body {
+  background: #FFF;
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-family: 'Prompt', sans-serif;
   overflow-x: hidden; }
 
 /*===========================*/
@@ -43,28 +61,80 @@ ul.thumbnails:after {
 .mg-t-15 {
   margin-top: 15px; }
 
-.half-section {
+.full-section {
+  margin-left: -10000px;
+  margin-right: -10000px;
+  padding-left: 10000px;
+  padding-right: 10000px; }
+
+.half-section-right {
   margin-right: -10000px;
   padding-right: 10000px; }
+
+.half-section-left {
+  margin-left: -10000px;
+  padding-left: 10000px; }
 
 .clr-bg-main {
   background: #EE6B02; }
 
 .clr-bg-grey {
-  background: #F7F7F7; }
+  background: #424242;
+  color: #FFF; }
+
+.flex-hover-card {
+  border-radius: 2px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24), 0 0 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  -ms-flex: 1;
+  flex: 1;
+  letter-spacing: .01em;
+  padding: 16px;
+  position: relative;
+  transition: all .3s; }
+  .flex-hover-card.flex-hover-card:hover {
+    box-shadow: 0 4px 4px rgba(1, 67, 163, 0.24), 0 0 4px rgba(1, 67, 163, 0.12), 0 6px 18px rgba(43, 133, 231, 0.12);
+    transform: translate3d(0, -2px, 0);
+    text-decoration: none; }
+  .flex-hover-card > p {
+    font-size: 12px;
+    font-size: 1.2rem; }
 
 /*===========================*/
 /*======= Basic Layout ======*/
 /*===========================*/
-.technologies {
-  background: #EE6B02;
-  padding: 5px;
-  text-align: center; }
+.notemp-hero {
+  background-image: url("../../images/launcher-lead.png");
+  background-position: center center;
+  background-repeat-y: no-repeat; }
+  .notemp-hero > .hero {
+    padding: 120px 15px 120px 300px; }
+  .notemp-hero p {
+    font-size: 14px;
+    font-size: 1.4rem; }
+
+.technologies ul {
+  list-style-type: none;
+  padding: 0; }
+  .technologies ul > li > ul {
+    font-weight: normal;
+    line-height: 40px;
+    padding: 5px 40px; }
+    .technologies ul > li > ul > li {
+      display: inline-block;
+      width: 180px !important; }
 
 .our-service .title-our-service {
   background: #FFF; }
 .our-service .list-our-services {
   padding: 15px; }
+
+.current-project {
+  background-image: url(https://www.buzzwoo.de/sites/default/files/bg_images/porsche-cayman-image.jpg);
+  background-position: center center;
+  background-size: cover;
+  height: 640px;
+  color: #FFF; }
 
 /*===========================*/
 /*========== Header ==========*/

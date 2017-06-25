@@ -46,6 +46,78 @@ body {
 /*===========================*/
 /*====== Generic Classes ====*/
 /*===========================*/
+.title {
+  margin: 40px 0;
+  padding: 25px 0;
+  position: relative; }
+  .title .line-style {
+    background: rgba(0, 0, 0, 0.07);
+    bottom: 0;
+    height: 1px;
+    position: absolute;
+    width: 33%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%); }
+    .title .line-style:before {
+      background: #f36005;
+      content: "";
+      display: block;
+      height: 1px;
+      position: absolute;
+      width: 100px;
+      -webkit-transition: all 0.4s ease;
+      -moz-transition: all 0.4s ease;
+      -o-transition: all 0.4s ease;
+      -ms-transition: all 0.4s ease;
+      transition: all 0.4s ease;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%); }
+    .title .line-style span {
+      display: block;
+      background: #fff;
+      border: 1px solid #f36005;
+      height: 10px;
+      position: absolute;
+      top: -5px;
+      width: 10px;
+      -webkit-border-radius: 100% 100% 100% 100%;
+      -moz-border-radius: 100% 100% 100% 100%;
+      border-radius: 100% 100% 100% 100%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%); }
+    .title .line-style i {
+      background: #fff;
+      color: #f36005;
+      display: block;
+      font-size: 20px;
+      height: 40px;
+      line-height: 40px;
+      position: absolute;
+      text-align: center;
+      top: -20px;
+      width: 40px;
+      z-index: 99;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%); }
+  .title:hover .line-style:before {
+    width: 75%; }
+
 clearfix:before,
 clearfix:after {
   content: "";
@@ -113,6 +185,17 @@ ul.thumbnails:after {
     font-size: 14px;
     font-size: 1.4rem; }
 
+.main-service ul {
+  color: #FFF;
+  margin-top: 15px; }
+.main-service .list-inline > li {
+  border-right: 2px solid #FFF;
+  font-size: 13px;
+  max-width: 300px;
+  text-align: left; }
+  .main-service .list-inline > li:last-child {
+    border: 0; }
+
 .technologies ul {
   list-style-type: none;
   padding: 0; }
@@ -136,6 +219,16 @@ ul.thumbnails:after {
   height: 640px;
   color: #FFF; }
 
+.customer img {
+  opacity: 0.5;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+  .customer img:hover {
+    opacity: 1; }
+
 /*===========================*/
 /*========== Header ==========*/
 /*===========================*/
@@ -156,6 +249,15 @@ header.header-top {
 /*===========================*/
 /*========== Footer =========*/
 /*===========================*/
+footer {
+  background: #2f2e2e;
+  color: #FFF; }
+  footer .copyr {
+    background: #242323;
+    font-size: 12px;
+    font-size: 1.2rem;
+    padding: 15px; }
+
 /*===========================*/
 /*=========== Etc ===========*/
 /*===========================*/

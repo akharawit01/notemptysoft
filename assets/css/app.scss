@@ -27,6 +27,26 @@ $clr-grey: #424242;
     font-size: ($size / 10) + rem; 
 }
 
+@mixin translateX () {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+@mixin transitionAll ($data) {
+    -webkit-transition: all $data ease;
+    -moz-transition: all $data ease;
+    -o-transition: all $data ease;
+    -ms-transition: all $data ease;
+    transition: all $data ease;
+}
+
+
+
+
 /*===========================*/
 /*========== Reset ==========*/
 /*===========================*/
@@ -60,6 +80,66 @@ body {
 /*===========================*/
 /*====== Generic Classes ====*/
 /*===========================*/
+.title {
+    margin: 40px 0;
+    padding: 25px 0;
+    position: relative;
+
+    & .line-style {
+        background: rgba(0,0,0,0.07);
+        bottom: 0;
+        height: 1px;
+        position: absolute;
+        width: 33%;
+        @include translateX();
+
+        &:before {
+            background: #f36005;
+            content: "";
+            display: block;
+            height: 1px;
+            position: absolute;
+            width: 100px;
+            @include transitionAll(.4s);
+            @include translateX();
+        }
+        & span {
+            display: block;
+            background: #fff;
+            border: 1px solid #f36005;
+            height: 10px;
+            position: absolute;
+            top: -5px;
+            width: 10px;
+            -webkit-border-radius: 100% 100% 100% 100%;
+            -moz-border-radius: 100% 100% 100% 100%;
+            border-radius: 100% 100% 100% 100%;
+            @include translateX();
+            
+        }
+
+        & i {
+            background: #fff;
+            color: #f36005;
+            display: block;
+            font-size: 20px;
+            height: 40px;
+            line-height: 40px;
+            position: absolute;
+            text-align: center;
+            top: -20px;
+            width: 40px;
+            z-index: 99;
+            @include translateX();
+        }
+    }
+
+    &:hover .line-style:before {
+        width: 75%;
+    }
+}
+
+
 clearfix:before,
 clearfix:after, {
     content: "";
@@ -142,6 +222,23 @@ ul.thumbnails:after {
     }
 }
 
+.main-service {
+    & ul {
+        color: #FFF;
+        margin-top: 15px;
+    }
+    & .list-inline>li {
+        border-right: 2px solid #FFF;
+        font-size: 13px;
+        max-width: 300px;
+        text-align: left;
+
+        &:last-child {
+            border: 0;
+        }
+    }
+}
+
 .technologies {
     & ul {
         list-style-type: none;
@@ -168,12 +265,24 @@ ul.thumbnails:after {
         padding: 15px;
     }
 }
+
 .current-project {
     background-image: url(https://www.buzzwoo.de/sites/default/files/bg_images/porsche-cayman-image.jpg);
     background-position: center center;
     background-size: cover;
     height: 640px;
     color: #FFF;
+}
+
+.customer {
+    & img {
+        opacity: 0.5;
+        @include transitionAll(.4s);
+
+        &:hover {
+            opacity: 1;
+        }
+    }
 }
 /*===========================*/
 /*========== Header ==========*/
@@ -203,7 +312,16 @@ header {
 /*===========================*/
 /*========== Footer =========*/
 /*===========================*/
+footer {
+    background: #2f2e2e;
+    color: #FFF;
 
+    & .copyr {
+        background: #242323;
+        @include font-size(12);
+        padding: 15px;
+    }
+}
 
 /*===========================*/
 /*=========== Etc ===========*/

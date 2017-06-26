@@ -74,9 +74,19 @@ $(document).ready(function() {
      * could be load with scroll down set.
      */
     offSetManager();
+
 });
 
 $(document).on('click', 'a[href^="#"]', function(e) {
     e.preventDefault();
-    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top }, 500, 'linear');
+    $('html, body').animate({ scrollTop: $($(this).attr('href')).offset().top - 70 }, 500, 'linear');
+    // console.log($($(this).attr('href')).offset().top);
+});
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 30) {
+        $('#scroll').fadeOut();
+    } else {
+        $('#scroll').fadeIn();
+    }
 });

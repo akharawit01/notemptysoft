@@ -19,6 +19,7 @@
 
 $clr-main: #EE6B02;
 $clr-grey: #424242;
+$clr-red: #ce2026;
 
 @import url('https://fonts.googleapis.com/css?family=Prompt');
 
@@ -103,6 +104,20 @@ $clr-grey: #424242;
     &:hover {
         box-shadow: 0 2px 5px 0 rgba(0,0,0,.56);
     }
+
+    &-notemp {
+        background: $clr-main;
+        border: 1px solid $clr-main;
+        @include font-size(20);
+        color: #FFF;
+        -webkit-transform: perspective(1px) translateZ(0);
+        transform: perspective(1px) translateZ(0);
+
+        &:hover {
+            background: transparent;
+            color: $clr-main;
+        }
+    }
 }
 /*===========================*/
 /*====== Basic Elements =====*/
@@ -126,6 +141,7 @@ body {
     margin: 80px 0 40px 0;
     padding: 25px 0;
     position: relative;
+    text-transform: uppercase;
 
     & .line-style {
         background: rgba(0,0,0,0.07);
@@ -197,6 +213,9 @@ ul.thumbnails:after {
 .mg-t-15 {
     margin-top: 15px;
 }
+.mg-b-35 {
+    margin-bottom: 35px;
+}
 
 .full-section {
     margin-left: -10000px;
@@ -221,8 +240,14 @@ ul.thumbnails:after {
 }
 .clr-bg-grey {
     background: $clr-grey;
-
     color: #FFF;
+}
+.clr-bg-red {
+    background: $clr-red;
+
+    & p {
+        color: #EFABAE;
+    }
 }
 
 .flex-hover-card {
@@ -232,6 +257,7 @@ ul.thumbnails:after {
     -ms-flex: 1;
     flex: 1;
     letter-spacing: .01em;
+    min-height: 410px;
     padding: 16px;
     position: relative;
     transition: all .3s;
@@ -243,7 +269,16 @@ ul.thumbnails:after {
     }
 
     &>p {
-        @include font-size(12);
+        @include font-size(14);
+    }
+
+    & span.glyphicon {
+        @include font-size(90);
+        color: $clr-main;
+        border: 4px solid $clr-main;
+        border-radius: 70px;
+        padding: 20px;
+    
     }
 }
 
@@ -306,7 +341,7 @@ ul.thumbnails:after {
     padding: 30px 50px;
     position: absolute;
     text-align: center;
-    top: 30%;
+    top: 25%;
     width: 800px;
     z-index: 999;
     @include translateX();
@@ -325,6 +360,7 @@ ul.thumbnails:after {
         border-right: 2px solid #FFF;
         font-size: 13px;
         max-width: 300px;
+        min-width: 300px;
         text-align: left;
 
         &:last-child {
@@ -361,12 +397,10 @@ ul.thumbnails:after {
 }
 
 .current-project {
-    background-image: url(https://www.buzzwoo.de/sites/default/files/bg_images/porsche-cayman-image.jpg);
-    background-position: center center;
-    background-size: cover;
+    background: transparent;
     color: #FFF;
     @include font-size(14);
-    height: 640px;
+    height: 700px;
 
     &>.pad-cur {
         padding-right: 300px;
@@ -414,12 +448,20 @@ header {
 }
 
 .navbar {
-    opacity:0;
-    transition:opacity 0.5s linear;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.navbar-brand {
+    padding: 5px 15px;
+}
+
+.navbar-nav>li>a {
+    color: #333;
 }
 
 .navbar.navbar-fixed-top.fixed-theme {
-    background-color: #FFF;
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
     opacity:1;
 }
@@ -450,8 +492,14 @@ footer {
     background: #2f2e2e;
     color: #FFF;
 
+    .footer-main {
+        color: #a0a09f;
+        padding: 40px 0;
+    }
+
     & .copyr {
         background: #242323;
+        color: #a0a09f;
         @include font-size(12);
         padding: 15px;
     }
@@ -466,4 +514,13 @@ footer {
 @media (min-width: 1200px) {
 
 }
+
+@media (min-width: 768px) {
+    .navbar-nav>li>a {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+}
+
+
 

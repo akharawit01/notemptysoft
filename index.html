@@ -19,26 +19,6 @@
 </head>
 
 <body>
-    <!-- <header class="header-top">
-        <div class="container">
-            <div class="row">
-                <img src="images/logo.png" alt="notemptysoft logo" class="logo">
-
-                <div class="input-group nav-search pull-left">
-                    <input type="text" class="form-control" placeholder="Search for...">
-                    <span class="input-group-btn">
-                        <button class="btn btn-default" type="button">Go!</button>
-                      </span>
-                </div>
-                <ul class="nav mg-t-10 nav-pills pull-right" role="navigation">
-                    <li role="Why Notemptysoft"><a href="#">Why Notemptysoft</a></li>
-                    <li role="About Us Notemptysoft"><a href="#">About Us</a></li>
-                    <li role="Services Notemptysoft"><a href="#">Services</a></li>
-                    <li role="Contact Us Notemptysoft"><a href="#">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </header> -->
     <nav id="header" class="navbar navbar-fixed-top">
         <div id="header-container" class="container navbar-container">
             <div class="navbar-header">
@@ -48,13 +28,16 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a id="brand" class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+                <a id="brand" class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="notemptysoft logo" class="logo">
+                </a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li role="Why Notemptysoft"><a href="#section02">Why Notemptysoft</a></li>
+                    <li role="About Us Notemptysoft"><a href="#">About Us</a></li>
+                    <li role="Services Notemptysoft"><a href="#">Services</a></li>
+                    <li role="Contact Us Notemptysoft"><a href="#">Contact Us</a></li>
                 </ul>
             </div>
             <!-- /.nav-collapse -->
@@ -63,22 +46,22 @@
     </nav>
     <!-- /.navbar -->
     <article class="notemp-hero">
-        <header class="hero">
-            <h1>Why Notemptysoft?</h1>
+        <header class="hero text-center">
+            <img src="images/logo-hero.png" alt="">
             <h4>The team of professionals is committed to doing business customers growth....</h4>
             <p>Best Technology Notemptysoft the team collected those with expertise in web development application . Both in terms of web design, systems analysis and specialize in producing a website application. Our commitment Develop the best systems to customers.</p>
-            <button type="button" class="btn btn-primary">Contact us</button>
+            <button type="button" class="btn btn-notemp">Contact us</button>
         </header>
     </article>
     <div class="box-parallax">
         <div class="parallax"></div>
-        <div class="scroll">
+        <div class="scroll" id="scroll">
             <a href="#section02">scroll<span></span></a>
         </div>
     </div>
     <div id="section02" class="main-service clr-bg-main">
         <div class="container">
-            <ul class="list-inline text-center">
+            <ul class="list-inline mg-b-35 text-center">
                 <li>
                     <h4>MECHANICS</h4>
                     <p>I'm a paragraph. Click here to add your own text and edit me.</p>
@@ -98,39 +81,47 @@
         <div class="container">
             <div class="text-center">
                 <h1 class="title">
-                    Creation. Adaptation. Localization.
+                    Why Notemptysoft
                     <div class="line-style"><i class="glyphicon glyphicon-tint"></i><span></span></div>
                 </h1>
                 <p>We provide high volume and efficient banner ad production solutions tailored for your digital marketing campaign. Our team has developed, implemented hundreds of banner ad campaigns and the solutions are trusted by the global brands and advertising agencies.</p>
                 <p>We provide high volume and efficient banner ad production solutions tailored for your digital marketing campaign. Our team has developed, implemented hundreds of banner ad campaigns and the solutions are trusted by the global brands and advertising agencies.</p>
-                <hr>
+                <br>
             </div>
             <div class="row">
                 <div class="col-md-3">
                     <div class="inner flex-hover-card">
-                        <img src="https://cloud.google.com/images/why-google/futureproof.svg">
-                        <h4>1.CONSULTING</h4>
+                        <div class="text-center">
+                            <span class="glyphicon glyphicon-comment"></span>
+                            <h4>1. CONSULTING</h4>
+                        </div>
                         <p>We help clients to analyze the strategy and online. Response plans to improve the business both online advertising and social media marketing, mobile, etc.</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="inner flex-hover-card">
-                        <img src="https://cloud.google.com/images/why-google/futureproof.svg">
-                        <h4>2.DESIGN</h4>
+                        <div class="text-center">
+                            <span class="glyphicon glyphicon-picture"></span>
+                            <h4>2. DESIGN</h4>
+                        </div>
                         <p>Creativity Is the key In our design We have a team creative innovative and experienced professional design best.</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="inner flex-hover-card">
-                        <img src="https://cloud.google.com/images/why-google/futureproof.svg">
-                        <h4>3.DEVELOPMENT</h4>
+                        <div class="text-center">
+                            <span class="glyphicon glyphicon-tree-deciduous"></span>
+                            <h4>3. DEVELOPMENT</h4>
+                        </div>
                         <p>We develop websites and web application. On mobile app and social media applications with the latest technologies. We have the ability Manage projects of all sizes. Complex systems more efficiently.</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="inner flex-hover-card">
-                        <img src="https://cloud.google.com/images/why-google/futureproof.svg">
-                        <h4>4.MAINTENANCE</h4>
+                        <div class="text-center">
+                            <span class="glyphicon glyphicon-wrench"></span>
+                            <h4>4.MAINTENANCE</h4>
+                        </div>
                         <p>We not only provide assistance. Our customers through the development process, but also carried out after the project is completed, the customer receives the package maintenance flexibility. And additional services, including domain and hosting.</p>
                     </div>
                 </div>
@@ -140,65 +131,71 @@
     <section>
         <div class="container">
             <h1 class="title text-center">
-                Creation. Adaptation. Localization.
+                Current Project
                 <div class="line-style"><i class="glyphicon glyphicon-tint"></i><span></span></div>
             </h1>
         </div>
-        <div class="current-project">
+        <div class="current-project parallax-window" data-parallax="scroll" data-image-src="https://www.buzzwoo.de/sites/default/files/bg_images/porsche-cayman-image.jpg">
             <div class="container pad-cur">
                 <h1>PORSCHE iPad Business App (B2B)</h1>
                 <p>Business iPad Lösungen für die offiziellen Porsche Presse Fahrveranstaltungen. Die Fahrveranstaltungen werden weltweit ausgetragen, sind fahrzeugspezifisch organisiert und werden vor Verkaufsstart der Modelle ausgetragen. Hierzu werden Journalisten aus aller Welt eingeladen und durch das Veranstaltungsprogramm geführt. BUZZWOO! ist für die Konzeptionierung, Entwicklung und Aktualisierung der begleitenden iOS Apps verantwortlich.</p>
+
+                <h3>Technology</h3>
+                <ul>
+                    <li>Bootstrap</li>
+                    <li>Vue.js</li>
+                </ul>
             </div>
         </div>
     </section>
     <section class="customer">
         <div class="container text-center">
             <h1 class="title text-center">
-                Creation. Adaptation. Localization.
+                Our client
                 <div class="line-style"><i class="glyphicon glyphicon-tint"></i><span></span></div>
             </h1>
             <ul class="list-inline">
                 <li>
-                    <a href="#"><img src="images/logo.png" alt="" height="60"></a>
+                    <img src="images/logo.png" alt="" height="60">
                 </li>
                 <li>
-                    <a href="#"><img src="images/logo.png" alt="" height="60"></a>
+                    <img src="images/logo.png" alt="" height="60">
                 </li>
                 <li>
-                    <a href="#"><img src="images/logo.png" alt="" height="60"></a>
+                    <img src="images/logo.png" alt="" height="60">
                 </li>
                 <li>
-                    <a href="#"><img src="images/logo.png" alt="" height="60"></a>
+                    <img src="images/logo.png" alt="" height="60">
                 </li>
                 <li>
-                    <a href="#"><img src="images/logo.png" alt="" height="60"></a>
+                    <img src="images/logo.png" alt="" height="60">
                 </li>
                 <li>
-                    <a href="#"><img src="images/logo.png" alt="" height="60"></a>
+                    <img src="images/logo.png" alt="" height="60">
                 </li>
             </ul>
         </div>
     </section>
     <footer>
-        <div class="main-service clr-bg-main">
+        <div class="main-service clr-bg-red">
             <div class="container">
                 <ul class="list-inline text-center">
                     <li>
-                        <h4>MECHANICS</h4>
-                        <p>I'm a paragraph. Click here to add your own text and edit me.</p>
+                        <h4><span class="glyphicon glyphicon-earphone"></span> CALL US</h4>
+                        <p>Tel: 123-456-7890, 084-4067469</p>
                     </li>
                     <li>
-                        <h4>MECHANICS</h4>
-                        <p>I'm a paragraph. Click here to add your own text and edit me.</p>
+                        <h4><span class="glyphicon glyphicon-envelope"></span> EMAIL US</h4>
+                        <p>into@notemptysoft.com</p>
                     </li>
                     <li>
-                        <h4>MECHANICS</h4>
-                        <p>I'm a paragraph. Click here to add your own text and edit me.</p>
+                        <h4><span class="glyphicon glyphicon-time"></span> OPENING HOURS</h4>
+                        <p>Mon - Fri: 7am - 10pm</p>
                     </li>
                 </ul>
             </div>
         </div>
-        <div class="container">
+        <div class="container footer-main">
             <div class="row">
                 <div class="col-md-4">
                     <h4>OVER 30 YEARS EXPERIENCE</h4>
@@ -215,13 +212,14 @@
             </div>
         </div>
         <div class="copyr text-center">
-            © 2017 BY&nbsp;NOTEMPTYSOFT
+            © 2017 by Mr.Akharawit. Proudly created with Notemptysoft.com
         </div>
     </footer>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="assets/js/parallax.min.js"></script>
     <script src="assets/js/app.js"></script>
 </body>
 

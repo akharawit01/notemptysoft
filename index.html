@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <header class="header-top">
+    <!-- <header class="header-top">
         <div class="container">
             <div class="row">
                 <img src="images/logo.png" alt="notemptysoft logo" class="logo">
@@ -30,8 +30,6 @@
                         <button class="btn btn-default" type="button">Go!</button>
                       </span>
                 </div>
-                <!-- /input-group -->
-
                 <ul class="nav mg-t-10 nav-pills pull-right" role="navigation">
                     <li role="Why Notemptysoft"><a href="#">Why Notemptysoft</a></li>
                     <li role="About Us Notemptysoft"><a href="#">About Us</a></li>
@@ -40,19 +38,45 @@
                 </ul>
             </div>
         </div>
-    </header>
-    
+    </header> -->
+    <nav id="header" class="navbar navbar-fixed-top">
+        <div id="header-container" class="container navbar-container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a id="brand" class="navbar-brand" href="#"><img src="images/logo.png" alt=""></a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- /.nav-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- /.navbar -->
     <article class="notemp-hero">
-        <header class="container hero">
+        <header class="hero">
             <h1>Why Notemptysoft?</h1>
             <h4>The team of professionals is committed to doing business customers growth....</h4>
             <p>Best Technology Notemptysoft the team collected those with expertise in web development application . Both in terms of web design, systems analysis and specialize in producing a website application. Our commitment Develop the best systems to customers.</p>
-            
             <button type="button" class="btn btn-primary">Contact us</button>
         </header>
     </article>
-
-    <div class="main-service clr-bg-main">
+    <div class="box-parallax">
+        <div class="parallax"></div>
+        <div class="scroll">
+            <a href="#section02">scroll<span></span></a>
+        </div>
+    </div>
+    <div id="section02" class="main-service clr-bg-main">
         <div class="container">
             <ul class="list-inline text-center">
                 <li>
@@ -70,11 +94,9 @@
             </ul>
         </div>
     </div>
-
     <section>
         <div class="container">
             <div class="text-center">
-                <h6>How do we do</h6>
                 <h1 class="title">
                     Creation. Adaptation. Localization.
                     <div class="line-style"><i class="glyphicon glyphicon-tint"></i><span></span></div>
@@ -115,22 +137,20 @@
             </div>
         </div>
     </section>
-
     <section>
-        <h1 class="title text-center">
-            Creation. Adaptation. Localization.
-            <div class="line-style"><i class="glyphicon glyphicon-tint"></i><span></span></div>
-        </h1>
+        <div class="container">
+            <h1 class="title text-center">
+                Creation. Adaptation. Localization.
+                <div class="line-style"><i class="glyphicon glyphicon-tint"></i><span></span></div>
+            </h1>
+        </div>
         <div class="current-project">
-            <div class="container">
+            <div class="container pad-cur">
                 <h1>PORSCHE iPad Business App (B2B)</h1>
-                <p>Business iPad Lösungen für die offiziellen Porsche Presse Fahrveranstaltungen. Die Fahrveranstaltungen werden weltweit ausgetragen, sind fahrzeugspezifisch organisiert und werden vor Verkaufsstart der Modelle ausgetragen. 
-                Hierzu werden Journalisten aus aller Welt eingeladen und durch das Veranstaltungsprogramm geführt. BUZZWOO! ist für die Konzeptionierung, Entwicklung und Aktualisierung der begleitenden iOS Apps verantwortlich.</p>
+                <p>Business iPad Lösungen für die offiziellen Porsche Presse Fahrveranstaltungen. Die Fahrveranstaltungen werden weltweit ausgetragen, sind fahrzeugspezifisch organisiert und werden vor Verkaufsstart der Modelle ausgetragen. Hierzu werden Journalisten aus aller Welt eingeladen und durch das Veranstaltungsprogramm geführt. BUZZWOO! ist für die Konzeptionierung, Entwicklung und Aktualisierung der begleitenden iOS Apps verantwortlich.</p>
             </div>
         </div>
-        
     </section>
-
     <section class="customer">
         <div class="container text-center">
             <h1 class="title text-center">
@@ -138,16 +158,27 @@
                 <div class="line-style"><i class="glyphicon glyphicon-tint"></i><span></span></div>
             </h1>
             <ul class="list-inline">
-                <li><a href="#"><img src="images/logo.png" alt="" height="60"></a></li>
-                <li><a href="#"><img src="images/logo.png" alt="" height="60"></a></li>
-                <li><a href="#"><img src="images/logo.png" alt="" height="60"></a></li>
-                <li><a href="#"><img src="images/logo.png" alt="" height="60"></a></li>
-                <li><a href="#"><img src="images/logo.png" alt="" height="60"></a></li>
-                <li><a href="#"><img src="images/logo.png" alt="" height="60"></a></li>
+                <li>
+                    <a href="#"><img src="images/logo.png" alt="" height="60"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/logo.png" alt="" height="60"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/logo.png" alt="" height="60"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/logo.png" alt="" height="60"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/logo.png" alt="" height="60"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="images/logo.png" alt="" height="60"></a>
+                </li>
             </ul>
         </div>
-    </section>    
-    
+    </section>
     <footer>
         <div class="main-service clr-bg-main">
             <div class="container">
@@ -187,8 +218,6 @@
             © 2017 BY&nbsp;NOTEMPTYSOFT
         </div>
     </footer>
-    
-    
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

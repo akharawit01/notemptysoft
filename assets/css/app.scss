@@ -18,6 +18,7 @@
 */
 
 $clr-main: #EE6B02;
+$clr-text: #333;
 $clr-grey: #424242;
 $clr-red: #ce2026;
 
@@ -197,6 +198,17 @@ body {
     }
 }
 
+/*
+ * Row with equal height columns
+ * --------------------------------------------------
+ */
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+}
+
 
 clearfix:before,
 clearfix:after, {
@@ -238,6 +250,7 @@ ul.thumbnails:after {
 .clr-bg-main {
     background: $clr-main;
 }
+
 .clr-bg-grey {
     background: $clr-grey;
     color: #FFF;
@@ -257,15 +270,21 @@ ul.thumbnails:after {
     -ms-flex: 1;
     flex: 1;
     letter-spacing: .01em;
-    min-height: 410px;
+    height: 100%;
     padding: 16px;
     position: relative;
     transition: all .3s;
+
 
     &.flex-hover-card:hover {
         box-shadow: 0 4px 4px rgba(1,67,163,.24), 0 0 4px rgba(1,67,163,.12), 0 6px 18px rgba(43,133,231,.12);
         transform: translate3d(0,-2px,0);
         text-decoration: none;
+
+        & span.glyphicon{
+            color: $clr-main;
+            border: 4px solid $clr-main;
+        }
     }
 
     &>p {
@@ -273,11 +292,12 @@ ul.thumbnails:after {
     }
 
     & span.glyphicon {
-        @include font-size(90);
-        color: $clr-main;
-        border: 4px solid $clr-main;
+        color: $clr-text;
+        border: 4px solid $clr-text;
         border-radius: 70px;
         padding: 20px;
+        @include font-size(90);
+        @include transitionAll(.4s);
     
     }
 }
